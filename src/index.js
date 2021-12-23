@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { createBrowserHistory } from "history";
+
 import './index.css';
-import App from './App';
+import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
+import ScrollToTop from './ScrollToTop';
+
+const history = createBrowserHistory();
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router history={history}>
+      <ScrollToTop />
+      <App />
+    </Router>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
