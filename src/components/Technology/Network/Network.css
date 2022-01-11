@@ -129,6 +129,8 @@ margin: 0;
         grid-template-columns: 1fr;
         grid-template-rows:450px;
         grid-auto-rows: 450px;
+        row-gap: 34px;
+        column-gap: 34px;
     }
 
     .network__card-photo {
