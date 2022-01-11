@@ -1,0 +1,139 @@
+.network {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 381px 0 0;
+    z-index: 1;
+    position: relative;
+}
+
+.network__title {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 130%;
+    /* identical to box height, or 68px */
+
+    text-align: center;
+margin: 0;
+    color: #FFFFFF;
+
+}
+
+.network__cards {
+    margin: 32px 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(547px, 1fr));
+    grid-template-rows: 464px;
+    grid-auto-rows: 464px;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.network__card {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+}
+
+.network__card-photo {
+    margin: 65px 0 0;
+}
+
+.network__card-title {
+    margin: 72px 0 0;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.network__card-text {
+    margin: 20px 0 0;
+    max-width: 90%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.network__bg{
+    z-index: 0;
+    position: absolute;
+    top: -246px;
+}
+
+@media (max-width: 1183px) {
+    .network__cards {
+        margin: 60px 0 0;
+        grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    }
+
+    .network__card-photo {
+        margin: 44px 0 0;
+    }
+    .network {
+        margin: 364px 0 0;
+    }
+    .network__bg{
+        top: 664px;
+        transform: scale(2);
+        opacity: 0.4;
+    }
+}
+
+@media (max-width: 589px) {
+    .network {
+        margin: 159px 0 0;
+    }
+
+    .network__bg{
+        top: 664px;
+        transform: scale(2);
+        opacity: 0.4;
+    }
+    .network__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 130%;
+        /* or 47px */
+    }
+
+    .network__cards {
+        margin: 40px 0 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(389px, 500px);
+        grid-auto-rows: minmax(389px, 500px);
+    }
+
+    .network__card-photo {
+        margin: 24px 0 0;
+    }
+
+    .network__card-title {
+        font-size: 22px;
+    }
+}

@@ -26,7 +26,7 @@ function Header(props) {
 
       </div> */}
       <Link to="/" className="header__logo">
-        <img className='header__logo-icon' src={logo} alt='Logo'/>
+        <img className='header__logo-icon' src={logo} alt='Logo' />
 
         <p className="header__logo-text header__logo-text_type_mobile">Diamond<br />Reserve<br />Coin</p>
         <p className="header__logo-text header__logo-text_type_pc">Diamond<br />Reserve<br />Coin</p>
@@ -48,6 +48,16 @@ function Header(props) {
         <rect y="10" width="32" height="2" rx="1" fill="#FFFFFF" />
         <rect y="20" width="32" height="2" rx="1" fill="#FFFFFF" />
       </svg>
+      <div className="header__btns">
+        <a target="_blank" rel="noreferrer" href="/#" className="header__btn header__btn_gray">
+          buy with Euros
+        </a>
+        <a target="_blank" rel="noreferrer" href="/#" className="header__btn header__btn_gray">
+          buy with crypto
+        </a>
+      </div>
+
+
       {/* <div className="header__buy">
         <p className="header__buy-text">Buy coin</p>
       </div> */}

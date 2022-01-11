@@ -2,8 +2,10 @@
   font-family: 'Manrope', Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 60px 0 0 0;
+  z-index: 10;
+  position: relative;
 }
 
 .header__socials {
@@ -157,6 +159,45 @@
   display: none;
 }
 
+.header__btn {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #FFFFFF;
+  margin: 0;
+  text-decoration: none;
+  padding: 20px 16px;
+
+  background: rgba(102, 105, 255, 0.44);
+  backdrop-filter: blur(65px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 9px;
+  margin: 0 20px 0 0;
+  transition: background-color ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+
+
+.header__btns {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 auto;
+}
+
+.header__btn_gray {
+  margin: 0 20px 0 0;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.header__btn_gray:last-of-type {
+  margin: 0;
+}
+
 @media (max-width: 1512px) {
   .header__social-icon {
     width: 20px;
@@ -215,9 +256,19 @@
   .header__links {
     margin: 10px 0 0 71px;
   }
+  .header__btn{
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .header__btn_gray {
+    margin: 0 12px 0 0;
+  }
 }
 
 @media (max-width: 896px) {
+  .header__btns{
+    display: none;
+  }
   .header__logo-icon {
     width: 32px;
     height: 32px;

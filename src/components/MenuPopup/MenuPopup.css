@@ -176,3 +176,43 @@
   margin: 0;
   width: fit-content;
 }
+
+
+.menu-popup__btn {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #FFFFFF;
+  margin: 0;
+  text-decoration: none;
+  padding: 20px 16px;
+
+  background: rgba(102, 105, 255, 0.44);
+  backdrop-filter: blur(65px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 9px;
+  transition: background-color ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+
+
+.menu-popup__btns {
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto 0 ;
+  width: 90%;
+}
+
+.menu-popup__btn_gray {
+  margin: 12px 0  0 0;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.menu-popup__btn_gray:first-of-type {
+  margin: 0;
+}

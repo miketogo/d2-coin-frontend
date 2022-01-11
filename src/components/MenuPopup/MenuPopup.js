@@ -41,10 +41,14 @@ function MenuPopup(props) {
             </div>
           ))}
         </nav>
-        <div className="menu-popup__buy">
-          <p className="menu-popup__buy-text">Buy coin</p>
-
-        </div>
+        <div className="menu-popup__btns">
+        <a target="_blank" rel="noreferrer" href="/#" className="menu-popup__btn menu-popup__btn_gray">
+          buy with Euros
+        </a>
+        <a target="_blank" rel="noreferrer" href="/#" className="menu-popup__btn menu-popup__btn_gray">
+          buy with crypto
+        </a>
+      </div>
         <div className="menu-popup__socials">
           <a target="_blank" rel="noreferrer" href="/#" className="menu-popup__social-link">
             <svg className="menu-popup__social-icon" width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">

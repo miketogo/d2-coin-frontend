@@ -3,7 +3,7 @@ import React from "react";
 
 import './Heading.css';
 
-
+import bg from '../../../assets/images/tech-heading/bg.png'
 
 
 function Heading() {
@@ -11,8 +11,9 @@ function Heading() {
 
   return (
     <section className="heading">
-      <h2 className="heading__title">New asset class<br />in crypto</h2>
-      <p className="heading__text">Tokenised diamonds connect users’ funds to the real world asset saving them from market instabilities and fluctuations</p>
+      <img className='heading__bg' src={bg} alt='bg'/>
+      <h2 className="heading__title">How DRC works</h2>
+      <p className="heading__text">DCR token provides a set of advanced features that enable users to explore blockchain use cases versatility </p>
     </section>
   );
 }
