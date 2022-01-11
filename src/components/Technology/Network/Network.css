@@ -121,7 +121,9 @@ margin: 0;
         line-height: 130%;
         /* or 47px */
     }
-
+    .network__card{
+        padding: 0 0 14px 0;
+    }
     .network__cards {
         margin: 40px 0 0;
         grid-template-columns: 1fr;
