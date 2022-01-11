@@ -155,7 +155,7 @@
   .how-it-works__text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     text-align: center;
     width: 100%;
@@ -180,7 +180,7 @@
   .how-it-works__stage-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 130%;
     max-width: 270px;
   }

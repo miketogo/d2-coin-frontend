@@ -125,8 +125,8 @@ margin: 0;
     .network__cards {
         margin: 40px 0 0;
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(389px, 500px);
-        grid-auto-rows: minmax(389px, 500px);
+        grid-template-rows:450px;
+        grid-auto-rows: 450px;
     }
 
     .network__card-photo {
