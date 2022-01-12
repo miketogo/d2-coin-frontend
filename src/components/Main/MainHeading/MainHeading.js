@@ -1,20 +1,27 @@
 import React from "react";
 
 import video from '../../../assets/video/main-heading-video.mp4';
+import placeholder from '../../../assets/video/placeholder.png';
 
 import './MainHeading.css';
 
 function MainHeading() {
-
-
+  let isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+  console.log(isIOS)
   return (
     <section className="main-heading">
       <div className="main-heading__video-darcker">
 
       </div>
-      <video className='main-heading__video' autoPlay loop muted>
-        <source src={video} type='video/mp4' />
-      </video>
+      {isIOS ? <></> :
+        <video className='main-heading__video' autoPlay loop muted>
+          <source src={video} type='video/mp4' />
+        </video>
+
+      }
+
+      <img className="main-heading__video-placeholder" src={placeholder} alt="diamond" />
 
       <div className="main-heading__content">
         <h2 className="main-heading__title">Diamond market reimagined.</h2>

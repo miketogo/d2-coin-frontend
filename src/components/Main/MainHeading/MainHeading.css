@@ -15,6 +15,17 @@
 
 }
 
+/* video::-webkit-media-controls-fullscreen-button
+{
+        display: none !important;
+} */
+
+.main-heading__video-placeholder{
+  position: absolute;
+  z-index: 0;
+  top: 103px;
+}
+
 .main-heading__video-darcker {
   position: absolute;
   z-index: 2;
@@ -121,7 +132,9 @@
   .main-heading__video {
     transform: scale(0.8);
   }
-
+  .main-heading__video-placeholder{
+    transform: scale(0.8);
+  }
   .main-heading__links {
     margin: 99px 0 0;
   }
@@ -142,10 +155,14 @@
   }
 
   .main-heading__video {
+    display: none;
     top: -40px;
     transform: scale(0.4);
   }
-
+  .main-heading__video-placeholder{
+    top: -40px;
+    transform: scale(0.4);
+  }
   .main-heading__content {
     margin: 81px 0 0;
   }
