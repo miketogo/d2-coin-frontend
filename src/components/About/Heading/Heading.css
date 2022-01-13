@@ -1,69 +1,96 @@
-.heading-about {
-  margin: 120px 0 0;
+.heading {
+  margin: 300px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 0;
 }
 
-.heading-about__title {
+.heading__bg {
+  z-index: 0;
+  position: absolute;
+  top: -400px;
+
+}
+
+.heading__title {
+  z-index: 1;
   margin: 0;
+  font-family: Manrope;
   font-style: normal;
-  font-weight: 600;
-  font-size: 52px;
-  line-height: 130%;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 82px;
   /* or 68px */
   text-align: center;
   /* main/300 */
-  color: #9A75FF;
+  color: #FFFFFF;
 }
 
-.heading-about__text {
-  margin: 36px 0 0;
+.heading__text {
+  z-index: 1;
+  margin: 33px 0 0;
+  font-family: Manrope;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 180%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
   /* or 43px */
   text-align: center;
-  color: #121212;
-  max-width: 717px;
+  color: #FFFFFF;
+  max-width: 972px;
 }
 
 @media (max-width: 1183px) {
-  .heading-about {
-    margin: 80px 0 0;
+  .heading {
+    margin: 250px 0 0;
   }
-  .heading-about__title {
+
+  .heading__title {
     font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 130%;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 82px;
   }
-  .heading-about__text {
+
+  .heading__text {
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 180%;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
     max-width: 667px;
+  }
+
+  .heading__bg {
+    transform: scale(0.7);
   }
 }
 
 @media (max-width: 589px) {
-  .heading-about {
-    margin: 48px 0 0;
+  .heading {
+    margin: 109px 0 0;
   }
-  .heading-about__title {
+
+  .heading__title {
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+
+  }
+
+  .heading__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
     line-height: 130%;
-  }
-  .heading-about__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 180%;
     max-width: 100%;
-    margin: 24px 0 0;
+    margin: 32px 0 0;
+  }
+
+  .heading__bg {
+    transform: scale(0.4);
+    top: -500px;
   }
 }

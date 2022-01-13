@@ -14,7 +14,7 @@ import PageNotFound from "../PageNotFound/PageNotFound";
 const Main = React.lazy(() => import('../Main/Main'));
 // const DiamondProduction = React.lazy(() => import('../DiamondProduction/DiamondProduction'));
 const Technology = React.lazy(() => import('../Technology/Technology'));
-// const About = React.lazy(() => import('../About/About'));
+const About = React.lazy(() => import('../About/About'));
 
 
 const links = [
@@ -69,7 +69,11 @@ export default withRouter(function App({ location }) {
             <Technology />
           </Suspense>
         </Route>
-
+        <Route path="/about">
+          <Suspense fallback={<Preloader />}>
+            <About />
+          </Suspense>
+        </Route>
         {/* <Route path="/diamond-production">
           <Suspense fallback={<Preloader />}>
             <DiamondProduction />

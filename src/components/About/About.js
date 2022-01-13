@@ -1,9 +1,10 @@
 import React from "react";
-import Banner from "../Banner/Banner";
+
 
 import './About.css';
 import Heading from "./Heading/Heading";
-import Team from "./Team/Team";
+import Tokens from "./Tokens/Tokens";
+
 
 
 
@@ -14,8 +15,7 @@ function About() {
   return (
     <div className="about">
       <Heading />
-      <Team />
-      <Banner />
+      <Tokens />
     </div>
   );
 }
