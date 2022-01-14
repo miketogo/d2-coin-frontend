@@ -65,14 +65,15 @@
   height: fit-content;
   display: flex;
   align-items: center;
+  background-color: #3D263E;
   margin: 0 20px 0 0;
 }
 
 .subscribe__input {
+  background-color: #3D263E;
   caret-color: white;
   -webkit-appearance: none;
   width: 357px;
-  background-color: unset;
   font: unset;
   text-rendering: unset;
   letter-spacing: unset;
