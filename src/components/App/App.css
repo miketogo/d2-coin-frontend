@@ -1,4 +1,4 @@
-.app{
+.app {
   max-width: 1920px;
   margin: 0 auto;
   position: relative;
@@ -6,15 +6,42 @@
   overflow: hidden;
 }
 
-@media (max-width: 1714px){
-  .app{
+input, textarea, select {
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+
+@-webkit-keyframes autofill {
+  to {
+    color: #fff;
+    background: #202020;
+    caret-color: inherit;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #202020 inset;
+  /* можно изменить на любой вариант цвета */
+  -webkit-text-fill-color: #fff;
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+
+@media (max-width: 1714px) {
+  .app {
     padding: 0 20px;
   }
 }
 
 
-@media (max-width: 626px){
-  .app{
+@media (max-width: 626px) {
+  .app {
     padding: 0 12px;
   }
 }
