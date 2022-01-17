@@ -28,8 +28,8 @@ function Header(props) {
       <Link to="/" className="header__logo">
         <img className='header__logo-icon' src={logo} alt='Logo' />
 
-        <p className="header__logo-text header__logo-text_type_mobile">Diamond<br />Reserve<br />Coin</p>
-        <p className="header__logo-text header__logo-text_type_pc">Diamond<br />Reserve<br />Coin</p>
+        <p className="header__logo-text header__logo-text_type_mobile">Diamond<br />Coin<br />Reserve</p>
+        <p className="header__logo-text header__logo-text_type_pc">Diamond<br />Coin<br />Reserve</p>
       </Link>
       <div className="header__links">
         {props.links.map((item, i) => (

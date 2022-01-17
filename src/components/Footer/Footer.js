@@ -17,7 +17,7 @@ function Footer(props) {
         <Link to="/" className="footer__logo">
 
           <img className='footer__logo-icon' src={logo} alt='Logo'/>
-          <p className="footer__logo-text">Diamond<br />Reserve<br />Coin</p>
+          <p className="footer__logo-text">Diamond<br />Coin<br />Reserve</p>
         </Link>
         <div className="footer__socials">
           <a target="_blank" rel="noreferrer" href="/#" className="footer__social-link">
@@ -38,6 +38,7 @@ function Footer(props) {
 
         </div>
       </div>
+      <p className="footer__site-name">Diamond Coin Reserve</p>
       <div className="footer__row footer__row-second">
         <nav className="footer__nav">
           {props.links.map((item, i) => (
@@ -53,7 +54,7 @@ function Footer(props) {
           <a className="footer__doc-link" target="_blank" rel="noreferrer" href="/#">Terms of sale</a>
         </div>
       </div> */}
-      <p className="footer__copiright">&#169; Diamond Reserve Coin&#160;&#160;&#160;|&#160;&#160;&#160;All Rights Reserved.</p>
+      <p className="footer__copiright">&#169;2021, Diamond Coin Reserve&#160;&#160;&#160;|&#160;&#160;&#160;All Rights Reserved.</p>
     </footer>
   );
 }
